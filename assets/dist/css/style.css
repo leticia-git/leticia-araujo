@@ -1,0 +1,241 @@
+@charset "UTF-8";
+.grid {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.nav-links {
+  padding: 0px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-links > div {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+.nav-links ul {
+  padding-inline-start: 0px;
+}
+
+.banner {
+  background-color: #1E1E1E;
+  padding: 30px;
+  border-radius: 50px;
+}
+.banner h1 {
+  font-size: 80px;
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 0;
+}
+.banner h2 {
+  font-size: 24px;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 80px 0;
+}
+.banner .projetos {
+  display: flex;
+  column-gap: 30px;
+}
+.banner .projetos img {
+  width: 100%;
+}
+
+.conteudo-sobre {
+  background-color: #1E1E1E;
+  padding: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.conteudo-sobre .titulo-sobre {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 80px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 10px;
+  margin-bottom: 30px;
+}
+.conteudo-sobre .texto-sobre {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 32px;
+  color: #fff;
+  width: 80%;
+  line-height: 1.3;
+}
+.conteudo-sobre .texto-sobre strong {
+  color: #CF4444;
+}
+.conteudo-sobre .img-sobre {
+  width: 100%;
+}
+.conteudo-sobre .img-sobre img {
+  width: 100%;
+}
+
+.conteudo-contato {
+  background-color: #1E1E1E;
+  padding: 10px 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  justify-content: space-between;
+}
+.conteudo-contato .icone-contato {
+  width: 100%;
+}
+.conteudo-contato .links-contato {
+  background: #D9D9D9;
+  height: 400px;
+  display: flex;
+  width: 100%;
+  border-radius: 0 50px 50px 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.conteudo-contato .links-contato a {
+  text-align: center;
+  font-size: 44px;
+  color: #1E1E1E;
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+li:hover {
+  background: #CF4444;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+.links-contato a:hover {
+  background: #CF4444;
+  transition: all 0.3s ease; /* Transição suave */
+}
+
+footer p {
+  text-align: center;
+  font-size: 80px;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 0px;
+  letter-spacing: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+@media (max-width: 1001px) {
+  .titulo-sobre {
+    font-size: 32px !important;
+  }
+  .banner {
+    margin-top: 30px;
+  }
+  li a {
+    line-height: 1.5 !important;
+  }
+  .nav-links > div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .icone-meu svg {
+    display: none;
+  }
+  h2 {
+    font-size: 16px !important;
+    margin: 20px !important;
+  }
+  .banner .projetos {
+    display: flex;
+    column-gap: 30px;
+    flex-direction: column;
+  }
+  .banner .projetos .projeto {
+    margin-bottom: 15px;
+  }
+  .conteudo-sobre {
+    background-color: #1E1E1E;
+    padding: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    flex-direction: column;
+  }
+  .conteudo-sobre .texto-sobre {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .conteudo-sobre .img-sobre {
+    display: flex;
+    justify-content: center;
+  }
+  .conteudo-sobre .img-sobre img {
+    width: 50%;
+  }
+  .conteudo-contato {
+    flex-direction: column;
+  }
+  .conteudo-contato .links-contato {
+    border-radius: 50px;
+  }
+  .icone-contato {
+    display: none;
+  }
+  footer p {
+    font-size: 32px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
