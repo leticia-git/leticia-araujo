@@ -237,6 +237,9 @@ footer p {
   footer p {
     font-size: 32px;
   }
+  .conteudo-sobre .titulo-sobre {
+    letter-spacing: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
