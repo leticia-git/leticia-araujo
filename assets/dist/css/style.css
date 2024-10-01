@@ -176,7 +176,8 @@ footer p {
 }
 @media (max-width: 1001px) {
   .titulo-sobre {
-    font-size: 32px !important;
+    width: 100%;
+    font-size: 22px !important;
   }
   .banner {
     margin-top: 30px;
